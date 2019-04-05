@@ -28,7 +28,7 @@ if (version_compare(phpversion(), '5.4.0', '<')) {
     exit;
 }
 
-error_reporting(E_ERROR); // Only show fatal errors in production
+error_reporting(E_ALL); // Only show fatal errors in production
 
 $load_time_begin = microtime(true);
 
